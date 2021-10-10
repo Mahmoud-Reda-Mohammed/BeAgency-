@@ -1,0 +1,209 @@
+*
+{
+    box-sizing: border-box;
+}
+.navAndFirst
+{
+    background-image: url("images/office.jfif");
+    background-size: cover;
+}
+/*start Navbar*/
+
+.navbar-nav .nav-link {
+  color :#000;
+  font-size:15px;
+  font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover ,.text-blue
+{
+    color:#0d6efd;
+}
+.navbar .navbar-nav .nav-content 
+{
+   display: flex;
+   justify-content: end;
+}
+.text-dark-blue
+{
+    color:#484d9b;
+}
+.nav-item
+{
+    margin-left: 15px;
+}
+.navbar-light .navbar-nav .nav-link.active
+{
+    color:#0d6efd; 
+}
+nav form 
+{
+    margin-left:50px;
+    width:120px;
+}
+/********************************************************* second section ************************************************************************/
+
+.secondSection p 
+{
+   width: 400px;
+   font-size: 15px;
+   text-align: center;
+}
+
+.bg-dark-blue{
+    background-color: #484d9b;
+}
+.secondSection button {
+    padding:2px 25px;
+  }
+  .secondSection .btn-light
+  {
+      border: 2px solid #484d9b;
+  }
+
+
+.secondSection .inverted-text
+{
+    transform:rotate(-90deg);
+    font-size:20px;
+    font-weight: bold;
+    position:absolute;
+    right:-170px;
+    top:350px;
+    animation-name:UpandDown;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes UpandDown
+{
+0%
+{
+    top:300px;
+}
+50%
+{
+    top:350px;
+}
+100%
+{
+    top:300px;
+}
+
+}
+
+
+
+.rounded-btn
+{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    padding:10px;
+    margin:10px;
+    font-size:20px;
+    font-weight: bold;
+}
+.secondSection .btn-light:hover {
+    color: #fff;
+    background-color: #484d9b;
+    border-color: #484d9b;
+}
+.secondSection h5{
+    margin-top:-20px;
+}
+.secondSection img{
+    margin-top:20px;
+}
+
+/*********************************************************************logos section******************************************************************/
+
+.logos img{
+    filter: grayscale(100%);
+}
+.logos img:hover{
+    filter: grayscale(0);
+    background-color: #333; 
+    display:inline-block;
+
+}
+
+/************************************************************* what can we do **************************************************/
+
+.offer img 
+{
+    width:100%;
+    height:100%;
+}
+
+.forWebsite .some-quick , .forWebsite .card-body p , footer p , .dontmiss p
+{
+    text-align: center;
+}
+
+.numbers img{
+    width:100%;
+    height:100%;
+}
+/***************************************************************** for website *********************************************************/
+.forWebsite
+{
+    background-color: rgba(50,0,200,0.7);
+    background-image: url("images/asset\ 653.jpeg");
+    background-attachment: fixed;
+}
+
+/*************************************************************** media query ******************************************************************/
+
+@media(max-width: 992px)
+{
+    .navbar ul
+    {
+        background-color: #333;
+    }
+      footer p span, 
+     .dontmiss input 
+    {
+        display:block;
+    }
+    nav form {
+       display: none;
+    }
+    
+    .navbar-light .navbar-nav .nav-link.active
+    {
+        color:#fff; 
+    }
+    .navbar-light .navbar-nav .nav-link
+    {
+        color:#EEE; 
+    }
+    .navbar-light .navbar-nav .nav-link:hover
+    {
+        color:#888; 
+    }
+    .inverted-text
+    {
+        display: none;
+    }
+    .secondSection button {
+      padding:2px 5px;
+      font-size: 10px;
+      display: block;
+    }
+    .secondSection-footer
+    {
+        display: none;   
+    }
+    .offer .card-text , .offer  .card-body p span 
+    {
+        font-size: 13px;
+    }
+   button {
+    font-size: 13px;
+    display:block;
+   }
+   
+}
+/****************************************************let the fact ************************************/
+
+
